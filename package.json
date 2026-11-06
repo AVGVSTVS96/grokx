@@ -1,0 +1,30 @@
+{
+  "name": "grokx",
+  "version": "0.1.0",
+  "description": "Free X reads for any agent, through Grok Bot's built-in x tools",
+  "license": "MIT",
+  "bin": {
+    "grokx": "src/grokx.ts"
+  },
+  "type": "module",
+  "scripts": {
+    "check": "oxlint && oxfmt --check && tsc",
+    "fix": "oxlint --fix; oxfmt"
+  },
+  "dependencies": {
+    "effect": "^4.1.2"
+  },
+  "devDependencies": {
+    "@oxlint/plugins": "1.91.0",
+    "@types/node": "^24.0.0",
+    "oxfmt": "0.76.0",
+    "oxlint": "1.91.0",
+    "oxlint-tsgolint": "7.0.2006",
+    "typescript": "7.0.2",
+    "ultracite": "8.1.1"
+  },
+  "engines": {
+    "node": ">=23.6"
+  },
+  "packageManager": "bun@1.4.3"
+}
